@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      /* background-color: hsl(212, 45%, 89%); */
+    }
+    .container{
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      height:80vh;
+      width: 80vw;
+      margin:80px 120px 80px 120px;
+      background-color: hsl(220, 15%, 55%);
+    }
+    .main{
+      /* border:2px solid red; */
+      width:21vw;
+      height:70vh;
+      display:flex;
+      flex-direction:column;
+      /* justify-content:center; */
+      align-items:center;
+      background-color:hsl(0, 0%, 100%);
+      border-radius:20px;
+      
+    }
+    img{
+      /* width:1440px; */
+        height: 45vh;
+        width: 20vw;
+        border-radius: 15px;
+        margin:10px;
+        
+        background-color:hsl(0, 0%, 100%);
+    }
+    .heading{
+      background-color:hsl(0, 0%, 100%);
+      font-weight: 700;
+      width: 222px;
+      /* padding:5px; */
+      margin:5px;
+      font-size:20px;
+      word-spacing: 0.02em;
+    }
+    .dis{
+      background-color:hsl(0, 0%, 100%);
+      font-weight:400;
+      width:236px;
+      font-size:15px;
+      color:gray;
+      margin:7px;
+    }
+
+    @media only screen and (max-width: 768px){
+
+.container{
+    width:80vw;
+    margin:60px;
+}
+.main{
+      /* border:2px solid red; */
+      width:35vw;
+    }
+    img{
+      /* width:1440px; */
+        height: 40vh;
+        width: 30vw;
+    }
+    .dis{
+      font-size: 15px;
+      word-spacing: 0.02em;
+
+    }
+
+
+}
+     
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="main">
+          <div class="image">
+            <img src="/images/image-qr-code.png" alt="QR-Code" srcset="">
+          </div>
+          <div class="heading">
+            Improve your front-end skills by building projects
+          </div>
+          <div class="dis">
+           <p> Scan the QR code to visit Frontend Mentor and take your coding skills to  the next level</p>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
